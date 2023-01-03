@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Sudoku</h1>
-    <hr>
-    <h2 id="errors">0</h2>
-    <!-- 9x9 grid -->
-    <div id="board"></div>
-    <br>
-    <!-- numbers -->
-    <div id="digits"></div> 
-    <script src="script.js"></script>
+    <div id="container">
+        <h1>Sudoku</h1>
+        <p>By Guido Pasciucco</p> <br>
+        <h4>
+            <a href="https://github.com/guido-pasciucco" target="_blank">Github</a>
+            <a href="https://github.com/guido-pasciucco/sudoku" target="_blank">This repository</a>
+        </h4>
+        <br>
+        <div class="button" onclick="easy();">Easy</div>
+        <div class="button" onclick="medium();">Medium</div>
+        <div class="button" onclick="hard();">Hard</div>
+        <div id="cellHolder"></div>
+        <br>
+        <div class="button" onclick="solve();">Solve</div>
+        <div class="button" onclick="reset();">Reset</div>
+        <div class="button" onclick="clean();">Clean</div>
+        <p id="status"></p>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
+
+
